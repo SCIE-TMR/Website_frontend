@@ -1,5 +1,5 @@
 <template>
-  <div class="body-page">
+  <div class="body-page flex h-full">
     <div class="text-container">
       <div class="line scie">
         SCIE

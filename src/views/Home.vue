@@ -1,5 +1,5 @@
 <template>
-    <div class="home-container">
+    <div class="home-container flex h-full">
       <!-- 导航栏 -->
       <Navbar />
   

@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container h-full">
     <div class="text-wrapper">
       <div class="curved-text" viewBox="0 0 600 200">
         WE
