@@ -1,6 +1,5 @@
 import './assets/main.css'
 // 引入 Swiper 的样式
-import '/Users/ljq/Desktop/Website_frontend/node_modules/swiper/swiper.min.css';
 import './assets/style/fonts.css'
 // 引入 Tailwind CSS
 
