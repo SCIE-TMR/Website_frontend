@@ -102,7 +102,7 @@
 .dot {
   width: 55px;
   height: 35px;
-  background-image: url('src/assets/img/SH5.svg');
+  background-image: url('@/assets/img/SH5.svg');
   background-size: cover;
   background-repeat: no-repeat;
   cursor: pointer;

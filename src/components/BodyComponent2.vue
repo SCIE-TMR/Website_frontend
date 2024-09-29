@@ -26,7 +26,7 @@
   align-items: center;
   width: 100%;
   height: 90vh;
-  background-image: url('/src/assets/img/Page2BG1.png'); /* 这里插入你的背景图片路径 */
+  background-image: url('@/assets/img/Page2BG1.png'); /* 这里插入你的背景图片路径 */
   background-size: cover; /* 背景图根据容器大小自动适应 */
   background-position: center; /* 图片居中显示 */
   background-repeat: no-repeat; /* 不重复背景图 */

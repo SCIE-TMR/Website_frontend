@@ -42,7 +42,7 @@
     background: #181642;
     height:90px;
     backdrop-filter: blur(10px);
-    background-image: url('/Users/ljq/Desktop/Website_frontend/src/assets/logo_img/logo_header.png');
+    background-image: url('@/assets/logo_img/logo_header.png');
     background-size: 350px;
     background-position: left;
     background-repeat: no-repeat;
@@ -79,7 +79,7 @@
     padding:8px 40px;
     transition:0.3s;
     border-radius:99px;
-    background-image: url('/Users/ljq/Desktop/Website_frontend/src/assets/logo_img/logo2_header.png');
+    background-image: url('@/assets/logo_img/logo2_header.png');
     background-position: center;
     background-size: 130px;
     background-repeat: no-repeat;
