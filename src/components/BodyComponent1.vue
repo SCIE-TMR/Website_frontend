@@ -24,7 +24,7 @@ export default {
   align-items: center; /* 垂直居中 */
   height: 90vh;
   background-color: black;
-  width: 100vw; /* 占满整个屏幕宽度 */
+  width: 100%; /* 占满整个屏幕宽度 */
 }
 
 .text-container {

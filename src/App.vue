@@ -1,19 +1,16 @@
 <!-- src/App.vue -->
 <template>
     <div id="app">
-      <Home/>
-      <!-- Add other content here -->
+      <HomePage/>
     </div>
   </template>
   
   <script>
-  
-  import Navbar from './components/Navbar.vue'
-  import Home from './views/Home.vue'
-  
+  //import Hp from '/Users/ljq/Desktop/Website_frontend/src/views/Hp.vue'
+  import HomePage from '@/views/HomePage.vue'
   export default {
     components: {
-      Home
+      HomePage
     },
   };
   // src/shims-vue.d.ts
@@ -22,9 +19,7 @@
   
   <style>
   #app {
-    text-align: center;
     background-color: black; /* Main background color */
-    color: white;
     min-height: 100vh;
   }
   </style>

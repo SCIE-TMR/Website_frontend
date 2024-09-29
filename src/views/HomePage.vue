@@ -1,24 +1,23 @@
 <template>
-    <div class="home-container">
-      <!-- 导航栏 -->
-      <Navbar />
   
+    <div class="home-container">
+      <Nav/>
       <!-- 轮播的主体部分 -->
-      <div class="body-container" @mouseenter="pauseCarousel" @mouseleave="resumeCarousel">
-        <!-- 动态加载 body 组件 -->
-        <transition name="fade" mode="out-in">
-          <component :is="bodies[currentIndex]" :key="currentIndex"></component>
-        </transition>
-      </div>
+        <div class="body-container" @mouseenter="pauseCarousel" @mouseleave="resumeCarousel">
+          <!-- 动态加载 body 组件 -->
+          <transition name="fade" mode="out-in">
+            <component :is="bodies[currentIndex]" :key="currentIndex"></component>
+          </transition>
+        </div>
   
       <!-- 圆点指示器 -->
-      <div class="dots">
-        <span
-          v-for="(body, index) in bodies"
-          :key="index"
-          class="dot"
-          :class="{ active: index === currentIndex }"
-          @click="goToPage(index)"
+        <div class="dots">
+          <span
+            v-for="(body, index) in bodies"
+            :key="index"
+            class="dot"
+            :class="{ active: index === currentIndex }"
+            @click="goToPage(index)"
         ></span>
       </div>
     </div>
@@ -26,15 +25,13 @@
   
   <script setup>
   import { ref, onMounted, onUnmounted } from 'vue';
-  import Navbar from '../components/Navbar.vue';
-  
-
   
   // 导入4个 body 组件
-  import BodyComponent1 from '../components/BodyComponent1.vue';
-  import BodyComponent2 from '../components/BodyComponent2.vue';
-  import BodyComponent3 from '../components/BodyComponent3.vue';
-  import BodyComponent4 from '../components/BodyComponent4.vue';
+  import Nav from '@/components/Nav.vue'
+  import BodyComponent1 from '@/components/Bodycomponent1.vue';
+  import BodyComponent2 from '@/components/Bodycomponent2.vue';
+  import BodyComponent3 from '@/components/Bodycomponent3.vue';
+  import BodyComponent4 from '@/components/Bodycomponent4.vue';
   
   // 轮播组件的列表
   const bodies = [BodyComponent1, BodyComponent2, BodyComponent3, BodyComponent4];
@@ -110,7 +107,6 @@
   background-repeat: no-repeat;
   cursor: pointer;
   transition: transform 0.3s, filter 0.3s;
-
   /* Default fill deep gray */
   filter: grayscale(100%) brightness(50%) ;
 }

@@ -1,7 +1,9 @@
 <template>
-  <div class="demo">
-    <!-- 数字和 'Members' 放在一起 -->
-    <p class="big-number">{{ tweened.number.toFixed(0) }} + Members</p>
+  <div class="container">
+    <div class="demo">
+      <!-- 数字和 'Members' 放在一起 -->
+      <p class="big-number">{{ tweened.number.toFixed(0) }} + Members</p>
+    </div>
   </div>
 </template>
 
@@ -34,7 +36,14 @@ onMounted(() => {
   color: white; /* 设置文字颜色 */
 }
 
-body {
-  background-color: black; /* 背景颜色为黑色 */
+.container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 90vh;
+  width:100vw;
+  background-color: black;
+  color: white;
+  padding-right: 50px;
 }
 </style>
