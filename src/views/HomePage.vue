@@ -28,10 +28,10 @@
   
   // 导入4个 body 组件
   import Nav from '@/components/Nav.vue'
-  import BodyComponent1 from '@/components/Bodycomponent1.vue';
-  import BodyComponent2 from '@/components/Bodycomponent2.vue';
-  import BodyComponent3 from '@/components/Bodycomponent3.vue';
-  import BodyComponent4 from '@/components/Bodycomponent4.vue';
+  import BodyComponent1 from '@/components/BodyComponent1.vue';
+  import BodyComponent2 from '@/components/BodyComponent2.vue';
+  import BodyComponent3 from '@/components/BodyComponent3.vue';
+  import BodyComponent4 from '@/components/BodyComponent4.vue';
   
   // 轮播组件的列表
   const bodies = [BodyComponent1, BodyComponent2, BodyComponent3, BodyComponent4];
