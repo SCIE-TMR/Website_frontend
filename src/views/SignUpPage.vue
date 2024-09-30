@@ -49,7 +49,7 @@
                      </div>
 
                      <div class="remember-forgot">
-                        <label><input type="checkbox" class="ck">Remember me</label>
+                        <label><input type="checkbox" >Remember me</label>
                         <a href="#" class="first">Forgot Password?<br></a> 
                     </div>
 
@@ -84,7 +84,8 @@
                      </div>
 
                      <div class="remember-forgot">
-                        <label><input type="checkbox">I agree to the terms & conditions</label>
+                        <label><input type="checkbox" required >I agree to the </label>
+                        <a href="#" class="terms">terms & conditions</a>
                         <a href="#" class="second">Forgot Password?<br></a> <!--记得改路由-->
                     </div>
 
@@ -125,6 +126,10 @@ export default {
     box-sizing:border-box;
     font-family: 'Bodoni',sans-serif;
 }
+.remember-forgot .terms{
+    font-weight:500;
+    text-decoration: underline;
+}
 .logreg-box .form-box.login{
     transform: translateX(0);
     transition: transform .6s ease;
@@ -154,11 +159,12 @@ body{
 }
 .navbar a{
     position:relative;
-    font-size:16px;
+    font-size:20px;
     color: #e4e4e4;
     text-decoration: none;
     font-weight: 500;
     margin-right:30px;
+    transition: .5s;
 }
 .navbar a::after{
     content:'';
@@ -167,18 +173,21 @@ body{
     left:0;
     width:100%;
     height:2px;
-    background: #e4e4e4;
+    background: #42426F;
     border-radius: 5px;
     transform:translateY(10px);
     transition: .5s;
     opacity: 0;
+}
+.navbar a:hover{
+    color:#42426F;
 }
 .navbar a:hover::after{
     transform:translateY(0);
     opacity: 1;
 }
 .search-bar{
-    width:250px;
+    width:300px;
     height: 45px;
     background: transparent;
     border: 2px solid #e4e4e4;
@@ -250,7 +259,7 @@ body{
     overflow: hidden;
 }
 .content .logo{
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 500;
     font-family: 'ahsing', sans-serif;
 }

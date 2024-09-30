@@ -83,7 +83,7 @@
   
   .body-container {
     width: 100%;
-    height: 750px; 
+    height: 90vh; 
     display: flex;
     align-items: center;
     justify-content: center;

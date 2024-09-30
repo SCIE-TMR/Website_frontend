@@ -2,7 +2,7 @@
 <template>
     <div id="app">
       <HomePage v-if="showNav"/>
-      <transition name="fade" mode="out-in"><router-view/></transition>
+      <router-view/>
     </div>
   </template>
   
@@ -25,19 +25,11 @@
   
   </script>
   
-  <style>
+  <style scoped>
   #app {
     background-color:#020410; /* Main background color */
     min-width: 100vh;
   }
-  .fade-enter-active, .fade-leave-active {
-  transition: all 0.5s ease;
-}
-
-.fade-enter, .fade-leave-to {
-  opacity: 0;
-  transform: translateX(30px); /* 加上位移效果 */
-}
   </style>
   
   
