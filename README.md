@@ -15,3 +15,5 @@ Before you begin, make sure you have the following installed:
 - To run this project:
     ```bash
     pnpm run dev
+- To deploy this project please ask Allen.
+    
