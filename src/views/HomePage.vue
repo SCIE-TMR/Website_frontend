@@ -1,5 +1,5 @@
 <template>
-  
+    
     <div class="home-container">
       <Nav/>
       <!-- 轮播的主体部分 -->

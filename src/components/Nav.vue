@@ -10,18 +10,19 @@
         SCIE TOMORROW
         </h1>
         <div class="divider"></div>
-        <a href="#">Home</a>
+        <router-link to="/Home">Home</router-link>
         <b>|</b>
-        <a href="#">Resources</a>
+        <router-link to="/Resources">Resources</router-link>
         <b>|</b>
-        <a href="#">Forum</a>
+        <router-link to="/Forum">Forum</router-link>
         <b>|</b>
-        <c href="#">About us</c>
+        <router-link to="/Aboutus">About us</router-link>
         <b>|</b>
      </nav>
+
      <div class="user-form-group">
-        <a class="login" href="#" >Login</a>
-        <a class="signup" href="#">Sign Up</a>
+        <router-link class="login" to="/login">Login</router-link>
+        <router-link class="signup" to="/signup">Sign Up</router-link>
         <label for="check">
             <i class='bx bx-menu menu'></i>
             <i class='bx bx-x close-menu'></i>
@@ -46,6 +47,7 @@
     background-size: 350px;
     background-position: left;
     background-repeat: no-repeat;
+    width:100%;
 }
 .logo{
     font-family: 'ahsing', sans-serif;
