@@ -16,6 +16,7 @@ export default defineConfig({
       resolvers: [ElementPlusResolver()],
     }),
   ],
+  assetsInclude: ['**/*.PNG'],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
