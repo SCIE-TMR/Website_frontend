@@ -301,7 +301,7 @@ body{
     top:50%;
     transform: translate(-50%,-50%);
     height:550px;
-    background: url('@/assets/img/SignupBG.png') no-repeat;
+    background: url('@/assets/img/SignupBG.webp') no-repeat;
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -471,7 +471,7 @@ body{
 .background{
     width:100%;
     height:100vh;
-    background:url('@/assets/img/SignupBG.png') no-repeat;
+    background:url('@/assets/img/SignupBG.webp') no-repeat;
     background-size: cover;
     background-position: center;
     filter:blur(10px);

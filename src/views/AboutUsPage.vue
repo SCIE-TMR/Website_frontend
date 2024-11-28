@@ -10,8 +10,8 @@
                         <div class="OurMission">
                             <h class="UpperText">OUR MISSION</h>
                             <div class="MiddleText">We firmly believe that every SCIE student possesses a brilliant spark waiting to ignite their future. That's why we've dedicated ourselves to crafting an all-in-one application platform - a guiding light to illuminate your journey and banish the shadows of doubt and worry!</div>
-                            <img src="@/assets/img/AB1.png" alt="AB1" class="Image-left">
-                            <img src="@/assets/img/AB2.png" alt="AB2" class="Image-right">
+                            <img src="@/assets/img/AB1.webp" alt="AB1" class="Image-left">
+                            <img src="@/assets/img/AB2.webp" alt="AB2" class="Image-right">
                         </div>
                         <div class="OurLS">
                             <div class="BG1">
@@ -30,7 +30,7 @@
                                 <a herf="#" class="text">Resources<i class='bx bx-link link'></i></a>
                                 <h class="text1">Discover a wealth of resources specifically selected to meet your unique needs and goals.</h>
                             </div>
-                            <img class="BG5" src="@/assets/img/AB3.png" alt="AB3">
+                            <img class="BG5" src="@/assets/img/AB3.webp" alt="AB3">
                             <h class="sideText">OUR LIGHTSPOT</h>
                         </div>
                         <div class="OurTL">
@@ -79,34 +79,34 @@
                                     <span>Like</span>
                                 </button>
                             </div>
-                            <img src="@/assets/img/AB4.png" alt="image" class="AB4">
+                            <img src="@/assets/img/AB4.webp" alt="image" class="AB4">
                         </div>
                         <div class="Collaboration">
                             <p class="text3">OUR COLLABORATION</p>
                             <div class="show">
                                 <div class="container1">
                                     <div class="card">
-                                        <img src="@/assets/img/SignupBG.png" alt="page">
+                                        <img src="@/assets/img/SignupBG.webp" alt="page">
                                         <div class="head">Page 1</div>
                                     </div>
 
                                     <div class="card">
-                                        <img src="@/assets/img/SignupBG.png" alt="page">
+                                        <img src="@/assets/img/SignupBG.webp" alt="page">
                                         <div class="head">Page 2</div>
                                     </div>
 
                                     <div class="card">
-                                        <img src="@/assets/img/SignupBG.png" alt="page">
+                                        <img src="@/assets/img/SignupBG.webp" alt="page">
                                         <div class="head">Page 3</div>
                                     </div>
 
                                     <div class="card">
-                                        <img src="@/assets/img/SignupBG.png" alt="page">
+                                        <img src="@/assets/img/SignupBG.webp" alt="page">
                                         <div class="head">Page 4</div>
                                     </div>
 
                                     <div class="card">
-                                        <img src="@/assets/img/SignupBG.png" alt="page">
+                                        <img src="@/assets/img/SignupBG.webp" alt="page">
                                         <div class="head">Page 5</div>
                                     </div>
                                 </div>

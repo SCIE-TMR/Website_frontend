@@ -43,7 +43,7 @@
     background: #181642;
     height:12vh;
     backdrop-filter: blur(10px);
-    background-image: url('@/assets/logo_img/logo_header.png');
+    background-image: url('@/assets/logo_img/logo_header.webp');
     background-size: 350px;
     background-position: left;
     background-repeat: no-repeat;
@@ -81,7 +81,7 @@
     padding:8px 40px;
     transition:.3s;
     border-radius:99px;
-    background-image: url('@/assets/logo_img/logo2_header.png');
+    background-image: url('@/assets/logo_img/logo2_header.webp');
     background-position: center;
     background-size: 5em;
     background-repeat: no-repeat;
