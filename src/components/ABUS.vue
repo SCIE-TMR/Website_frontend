@@ -22,7 +22,6 @@
                     克里斯蒂亚诺·罗纳尔多(Cristiano Ronaldo),全名克里斯蒂亚诺·罗纳尔多·多斯·桑托斯·阿维罗(Cristiano Ronaldo dos Santos Aveiro),简称C罗,
                     1985年2月5日出生于葡萄牙马德拉群岛丰沙尔,葡萄牙职业足球运动员，司职边锋/中锋，现效力于沙特阿拉伯职业足球联赛的利雅得胜利足球俱乐部
                 </div>
-                <div class="back">Waiting for more; ....</div>
                 <h>View More</h>
             </div>
         </div>
@@ -38,7 +37,6 @@
                     克里斯蒂亚诺·罗纳尔多(Cristiano Ronaldo),全名克里斯蒂亚诺·罗纳尔多·多斯·桑托斯·阿维罗(Cristiano Ronaldo dos Santos Aveiro),简称C罗,
                     1985年2月5日出生于葡萄牙马德拉群岛丰沙尔,葡萄牙职业足球运动员，司职边锋/中锋，现效力于沙特阿拉伯职业足球联赛的利雅得胜利足球俱乐部
                 </div>
-                <div class="back">Waiting for more; ....</div>
                 <h>View More</h>
             </div>
         </div>
@@ -54,7 +52,6 @@
                     克里斯蒂亚诺·罗纳尔多(Cristiano Ronaldo),全名克里斯蒂亚诺·罗纳尔多·多斯·桑托斯·阿维罗(Cristiano Ronaldo dos Santos Aveiro),简称C罗,
                     1985年2月5日出生于葡萄牙马德拉群岛丰沙尔,葡萄牙职业足球运动员，司职边锋/中锋，现效力于沙特阿拉伯职业足球联赛的利雅得胜利足球俱乐部
                 </div>
-                <div class="back">Waiting for more; ....</div>
                 <h>View More</h>
             </div>
         </div>
@@ -69,7 +66,48 @@
                     克里斯蒂亚诺·罗纳尔多(Cristiano Ronaldo),全名克里斯蒂亚诺·罗纳尔多·多斯·桑托斯·阿维罗(Cristiano Ronaldo dos Santos Aveiro),简称C罗,
                     1985年2月5日出生于葡萄牙马德拉群岛丰沙尔,葡萄牙职业足球运动员，司职边锋/中锋，现效力于沙特阿拉伯职业足球联赛的利雅得胜利足球俱乐部
                 </div>
-                <div class="back">Waiting for more; ....</div>
+                <h>View More</h>
+            </div>
+        </div>
+
+        <div class="card card-1" >
+            <div class="img">
+                <img src="@/assets/img/member/member2.jpg" alt="Peter">
+            </div>
+            <div class="content">
+                <div class="title">Leo Ronaldo</div>
+                <div class="text">
+                    克里斯蒂亚诺·罗纳尔多(Cristiano Ronaldo),全名克里斯蒂亚诺·罗纳尔多·多斯·桑托斯·阿维罗(Cristiano Ronaldo dos Santos Aveiro),简称C罗,
+                    1985年2月5日出生于葡萄牙马德拉群岛丰沙尔,葡萄牙职业足球运动员，司职边锋/中锋，现效力于沙特阿拉伯职业足球联赛的利雅得胜利足球俱乐部
+                </div>
+                <h>View More</h>
+            </div>
+        </div>
+
+        <div class="card card-1" >
+            <div class="img">
+                <img src="@/assets/img/member/member2.jpg" alt="Peter">
+            </div>
+            <div class="content">
+                <div class="title">Leo Ronaldo</div>
+                <div class="text">
+                    克里斯蒂亚诺·罗纳尔多(Cristiano Ronaldo),全名克里斯蒂亚诺·罗纳尔多·多斯·桑托斯·阿维罗(Cristiano Ronaldo dos Santos Aveiro),简称C罗,
+                    1985年2月5日出生于葡萄牙马德拉群岛丰沙尔,葡萄牙职业足球运动员，司职边锋/中锋，现效力于沙特阿拉伯职业足球联赛的利雅得胜利足球俱乐部
+                </div>
+                <h>View More</h>
+            </div>
+        </div>
+
+        <div class="card card-1" >
+            <div class="img">
+                <img src="@/assets/img/member/member2.jpg" alt="Peter">
+            </div>
+            <div class="content">
+                <div class="title">Leo Ronaldo</div>
+                <div class="text">
+                    克里斯蒂亚诺·罗纳尔多(Cristiano Ronaldo),全名克里斯蒂亚诺·罗纳尔多·多斯·桑托斯·阿维罗(Cristiano Ronaldo dos Santos Aveiro),简称C罗,
+                    1985年2月5日出生于葡萄牙马德拉群岛丰沙尔,葡萄牙职业足球运动员，司职边锋/中锋，现效力于沙特阿拉伯职业足球联赛的利雅得胜利足球俱乐部
+                </div>
                 <h>View More</h>
             </div>
         </div>

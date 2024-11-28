@@ -16,7 +16,7 @@
         <b>|</b>
         <router-link to="/Forum">Forum</router-link>
         <b>|</b>
-        <router-link to="/Aboutus">About us</router-link>
+        <router-link to="/Aboutus" class="c">About us</router-link>
         <b>|</b>
      </nav>
 
@@ -41,7 +41,7 @@
     align-items:center;
     justify-content: space-around;
     background: #181642;
-    height:90px;
+    height:12vh;
     backdrop-filter: blur(10px);
     background-image: url('@/assets/logo_img/logo_header.png');
     background-size: 350px;
@@ -72,19 +72,20 @@
     transition:0.3s;
     border-radius:99px;
 }
-.nav c{
+.nav .c{
     color:white;
     text-decoration: none;
     font-weight:600;
     font-size:23px;
     font-family: 'Bodoni',sans-serif;
     padding:8px 40px;
-    transition:0.3s;
+    transition:.3s;
     border-radius:99px;
     background-image: url('@/assets/logo_img/logo2_header.png');
     background-position: center;
-    background-size: 130px;
+    background-size: 5em;
     background-repeat: no-repeat;
+    will-change: transform;
 }
 .nav b{
     color:white;
@@ -97,7 +98,7 @@
 .nav a:hover{
     background: #42426F;
 }
-.nav c:hover{
+.nav .c:hover{
     background: #42426F;
 }
 .user-form-group a {
@@ -145,7 +146,7 @@
         box-shadow: 10px 0px 10px rgba(0,0,0,0.2);
         z-index: 99;
     }
-    .nav c{
+    .nav .c{
         background-image: none ;
         z-index:99;
     }

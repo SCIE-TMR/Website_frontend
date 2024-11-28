@@ -4,22 +4,7 @@
                 <Nav/>
             </el-header>
             <el-container>
-                <el-aside width="200px" class="Aside">
-                    <div class="demo-progress">
-                        <el-progress width="150" type="dashboard" :percentage="percentage" :color="colors" />
-                    </div>
-                    <div class="steps">
-                        <el-steps space="100px" style="max-width: 400px" :active="active" finish-status="finish" direction="vertical">
-                            <el-step title="Our Mission" />
-                            <el-step title="Our Lightspot" />
-                            <el-step title="Our timeline" />
-                            <el-step title="Meet OurTeam" />
-                            <el-step title="Collaboration" />
-                        </el-steps>
-                    </div>
-                </el-aside>
                 <el-main> <!--主要部分-->
-                    <el-backtop :right="100" :bottom="100" />
                     <el-scrollbar height="89vh">
                     <div class="container">
                         <div class="OurMission">
@@ -50,7 +35,7 @@
                         </div>
                         <div class="OurTL">
                             <h  class="text">OUR TIMELINE</h>
-                            <el-timeline style="max-width: 700px" class="tl">
+                            <el-timeline style="max-width: 43em" class="tl">
                                 <el-timeline-item center timestamp="2024/1/1" placement="top"> 
                                     <h class="text1">Event start</h>
                                 </el-timeline-item>
@@ -135,36 +120,9 @@
 </template>
 
 <script setup scoped>
-import { onMounted, ref } from 'vue';
 import Nav from '@/components/Nav.vue';
 import ABUS from '@/components/ABUS.vue';
 import confetti from 'canvas-confetti'
-
-const percentage = ref(0);
-const active = ref(0);
-const btn = ref(null);
-
-onMounted(() => {
-  setInterval(() => {
-    active.value++;
-    if (active.value > 4) active.value = 0;
-  }, 1000);
-});
-
-const colors = [
-  { color: '#f56c6c', percentage: 20 },
-  { color: '#e6a23c', percentage: 40 },
-  { color: '#5cb87a', percentage: 60 },
-  { color: '#1989fa', percentage: 80 },
-  { color: '#6f7ad3', percentage: 100 },
-];
-
-onMounted(() => {
-  setInterval(() => {
-    percentage.value = (percentage.value % 100) + 20;
-  }, 1000);
-}
-);
 
 // 定义 confetti 触发的方法
 const launchConfetti = () => {
@@ -179,7 +137,6 @@ const launchConfetti = () => {
     }
   });
 };
-
 </script>
 
 <style scoped>
@@ -204,19 +161,23 @@ const launchConfetti = () => {
 }
 .container .OurMission .Image-right{
     height: auto;
-    width:870px;
+    width:54.375em;
     border-radius: 10px;
-    margin-top:90px;
-    margin-left:370px;
+    margin-top:5.625em;
+    margin-left:33.125em;
     position:absolute;
+    min-width: 54.375em;
+    min-height: auto;
 }
 .container .OurMission .Image-left{
-    height: 240px;
+    height: 15em;
     width:auto;
     border-radius: 10px;
     margin-top:60px;
     margin-left:60px;
     position:absolute;
+    min-width: auto;
+    min-height: 15em;
 }
 .container .OurMission .UpperText{
     color:white;
@@ -227,6 +188,7 @@ const launchConfetti = () => {
     position: absolute;
     margin-top: 145px;
     margin-left: 123px;
+    min-width: 500px;
 }
 .container .OurMission .MiddleText{
     color:white;
@@ -256,7 +218,7 @@ const launchConfetti = () => {
     width:430px;
     height:230px;
     margin-top:90px;
-    margin-left:165px;
+    margin-left:225px;
     border-radius: 15px;
     position: absolute;
 }
@@ -265,7 +227,7 @@ const launchConfetti = () => {
     width:430px;
     height:230px;
     margin-top:90px;
-    margin-left:635px;
+    margin-left:695px;
     border-radius: 15px;
     position: absolute;
 }
@@ -274,7 +236,7 @@ const launchConfetti = () => {
     width:430px;
     height:230px;
     margin-top:360px;
-    margin-left:165px;
+    margin-left:225px;
     border-radius: 15px;
     position: absolute;
 }
@@ -283,7 +245,7 @@ const launchConfetti = () => {
     width:430px;
     height:230px;
     margin-top:360px;
-    margin-left:635px;
+    margin-left:695px;
     border-radius: 15px;
     position: absolute;
     z-index: 100;
@@ -293,8 +255,6 @@ const launchConfetti = () => {
     width:auto;
     position: absolute;
     margin-top: 320px;
-    margin-left: 1040px;
-
 }
 .container .OurLS a{
     font-size: 35px;
@@ -326,7 +286,7 @@ const launchConfetti = () => {
     color:#e4e4e4;
     font-size: 60px;
     font-family: 'Times New Roman', Times, serif;
-    margin-left:1130px;
+    left:1300px;
     margin-top: 60px;
 }
 .container .OurTL{
@@ -358,6 +318,7 @@ const launchConfetti = () => {
     font-family: 'Times New Roman', Times, serif;
     margin-left:300px;
     margin-top: 60px;
+    min-width: 500px;
 }
 .container .MOT{
     background: #020410;
@@ -500,6 +461,7 @@ const launchConfetti = () => {
     object-fit: cover;
     transition: all 1s ease-in-out;
     filter:grayscale(100%);
+    will-change: transform; /* 解决safari渲染问题 , 问题原因未知 */
 }
 .container .Collaboration .container1 .card .head{
     color:black;
@@ -517,7 +479,7 @@ const launchConfetti = () => {
     white-space:nowrap;
 }
 .container .Collaboration .container1 .card:hover{
-    flex-grow: 4.5;
+    flex-grow: 3;
 }
 .container .Collaboration .container1 .card:hover img{
     filter:grayscale(0);
@@ -539,19 +501,6 @@ const launchConfetti = () => {
     margin-left:200px;
     margin-top: 100px;
     position: absolute;
-}
-.Aside{
-    background: #e4e4e4;
-    border-radius: 10px;
-    opacity:1;
-}
-.Aside .demo-progress{
-    padding-left: 25px;
-    padding-top: 40px;
-}
-.Aside .steps{
-    padding-left: 35px;
-    padding-top: 50px;
 }
 * {
     margin:0;

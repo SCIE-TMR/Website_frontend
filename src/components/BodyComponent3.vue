@@ -26,8 +26,8 @@ export default {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  height: 90vh;
-  width:100vw;
+  height: 90%;
+  width:100%;
   background-color: black;
   color: white;
   padding-right: 50px;

@@ -1,7 +1,9 @@
 <template>
     
-    <div class="home-container">
+    <el-header height="11vh" class="hd">
       <Nav/>
+    </el-header>
+    <el-main>
       <!-- 轮播的主体部分 -->
         <div class="body-container" @mouseenter="pauseCarousel" @mouseleave="resumeCarousel">
           <!-- 动态加载 body 组件 -->
@@ -20,7 +22,7 @@
             @click="goToPage(index)"
         ></span>
       </div>
-    </div>
+    </el-main>
   </template>
   
   <script setup>

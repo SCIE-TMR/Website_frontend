@@ -1,8 +1,7 @@
 <!-- src/App.vue -->
 <template>
     <div id="app">
-      <div v-if=" isScreenValid">
-        <HomePage v-if="showNav"/>
+      <div v-if="isScreenValid">
         <router-view/> 
       </div>
       <div v-else class="warning">
@@ -12,28 +11,27 @@
   </template>
   
   <script scoped>
-  //import Hp from '/Users/ljq/Desktop/Website_frontend/src/views/Hp.vue'
   import HomePage from '@/views/HomePage.vue'
   import SignUpPage from '@/views/SignUpPage.vue'
   import AboutUsPage from '@/views/AboutUsPage.vue'
-  import ABUS from '@/components/ABUS.vue'
+  import ErrorPage from '@/views/ErrorPage.vue'
   export default {
     components: {
       HomePage,
       SignUpPage,
       AboutUsPage,
-      ABUS
+      ErrorPage
     },
     computed: {
-      showNav(){
-        return this.$route.name !== 'SignUpPage' && this.$route.name !== 'Login' && this.$route.name !== 'Forum' && this.$route.name !== 'Resources' && this.$route.name !== 'Aboutus';
-      }
+      showhome(){
+        return this.$route.name == 'Home';
+      },
     },
     data() {
     return {
       isScreenValid: true, // 用于存储当前屏幕是否符合要求
-      minWidth: 1000, // 最小宽度要求
-      minHeight: 768, // 最小高度要求
+      minWidth: 100, // 最小宽度要求
+      minHeight: 0, // 最小高度要求
     };
   },
   methods: {
@@ -64,11 +62,6 @@
   <style scoped>
   #app {
     background-color:#020410; /* Main background color */
-  }
-  .warning{
-    text-align: center;
-    color: red;
-    margin-top:100px;
   }
   </style>
   

@@ -84,8 +84,69 @@
                      </div>
 
                      <div class="remember-forgot">
-                        <label><input type="checkbox" required >I agree to the </label>
-                        <a href="#" class="terms">terms & conditions</a>
+                        <label><input type="checkbox" required id="term">I agree to the </label>
+                        <a href="#" class="terms" @click.prevent="ShowModal">terms & conditions</a>
+                            <el-dialog
+                            title="Terms & Conditions"
+                            v-model="isModalVisible"
+                            width="40%"
+                            @close="isModalVisible = false"
+                            :append-to-body="true"
+                            center>
+                            <el-scrollbar height="400px">
+                            <p>1.	 General rules
+
+•	 Welcome to register as a user of this platform. Please read the following terms carefully before registering. Once you click the "Register" button, it means that you have read and agreed to abide by these terms.
+<br>
+2.	 User qualification
+
+•	 Registered users should be natural persons with full civil capacity, and minors need to register and use this platform with the consent of their guardians. Users must provide true, accurate and complete registration information.
+<br>
+3.	 Account security
+
+•	 Users shall be responsible for the security of their accounts and passwords, and be responsible for all activities carried out through their accounts. If you find that the account has been stolen or used abnormally, you should notify the platform immediately.
+<br>
+4.	 User Code of Conduct
+
+•	 When users publish content on the platform, they should abide by relevant national laws and regulations, and shall not publish any content involving illegal, infringement, falsehood, defamation, harassment, etc.
+
+•	 The platform has the right to review, modify and delete the content published by the user, and has the right to suspend or terminate the user's account when it finds any violation of the terms.
+<br>
+5.	 Privacy protection
+
+•	 The platform attaches importance to the protection of users' personal information and promises not to disclose users' personal information to third parties without the user's consent, except as otherwise provided by laws and regulations.
+
+•	 The platform will use user information reasonably in order to provide better services to users.
+<br>
+6.	 Content management
+
+•	 All content published by users in the forum should comply with the norms of the platform community, and it is forbidden to publish information that violates national laws and regulations and public order and morals.
+
+•	 The platform has the right to delete the content that violates the regulations and deal with the user's account accordingly according to the severity of the circumstances.
+<br>
+7.	 Disclaimer
+
+•	 All the promotion information and content provided by this platform are for reference only and do not constitute suggestions for users' decision-making. Users should make independent judgments according to their personal circumstances.
+
+•	 The platform is not responsible for the communication or transaction behavior between users, and users are requested to bear their own risks.
+<br>
+8.	 Service change or termination
+
+•	 The platform has the right to modify, suspend or terminate part or all of the services at any time according to the actual situation. Any change, suspension or termination of the service will be notified to the user in advance.
+<br>
+9.	 Amendment of terms
+
+•	 The platform has the right to modify the registration terms as needed, and the modified terms will be published on the website and take effect from the date of publication. If the user continues to use the platform, he accepts the revised terms.
+<br>
+10.	 Application of law and dispute resolution
+
+•	 This clause shall apply to the laws of the People's Republic of China. Disputes arising from this clause shall be resolved by friendly negotiation between the two parties; if the negotiation fails, either party may file a lawsuit in the people's court where the platform is located.</p>
+                                </el-scrollbar>
+                                <span slot="footer" class="dialog-footer">
+                                    <el-button class="button" @click="isModalVisible = false">Disagree</el-button>
+                                    <el-button class="button" type="primary" @click="Confirmation">Agree</el-button>
+                                </span>
+                            </el-dialog>
                         <a href="#" class="second">Forgot Password?<br></a> <!--记得改路由-->
                     </div>
 
@@ -101,11 +162,12 @@
     </div>
 </template>
 
-<script>
+<script scoped>
 export default {
   data() {
     return {
       isRegisterActive: false, // 控制表单状态的变量
+      isModalVisible: false,
     };
   },
   methods: {
@@ -115,6 +177,15 @@ export default {
     switchToLogin() {
       this.isRegisterActive = false; // 切换回登录表单
     },
+    ShowModal() {
+        console.log("Success");
+        this.isModalVisible = true;
+        document.getElementById(`term`).checked = false;
+    },
+    Confirmation() {
+        this.isModalVisible = false;
+        document.getElementById(`term`).checked = true;
+    }
   },
 };
 </script>
@@ -413,5 +484,12 @@ body{
 .logreg-box.active .form-box.register{
     transform: translateX(0);
     transition-delay: .7s;
+}
+.dialog-footer {  
+  display: flex;
+  justify-content: flex-end;
+}
+.dialog-footer .button{
+    width:100px;
 }
 </style>

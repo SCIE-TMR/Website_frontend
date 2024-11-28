@@ -40,7 +40,7 @@ onMounted(() => {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  height: 90vh;
+  height: 90%;
   width:100%;
   background-color: black;
   color: white;

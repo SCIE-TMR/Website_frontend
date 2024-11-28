@@ -22,7 +22,7 @@ export default {
   display: flex;
   justify-content: flex-start; /* 水平靠左 */
   align-items: center; /* 垂直居中 */
-  height: 90vh;
+  height: 90%;
   background-color: black;
   width: 100%; /* 占满整个屏幕宽度 */
 }
