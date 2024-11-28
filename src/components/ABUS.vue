@@ -14,7 +14,7 @@
 
         <div class="card card-1" >
             <div class="img">
-                <img src="@/assets/img/member/member2.jpg" alt="Peter">
+                <img src="../../public/member/member2.jpg" alt="Peter">
             </div>
             <div class="content">
                 <div class="title">Leo Ronaldo</div>
@@ -29,7 +29,7 @@
 
         <div class="card card-2">
             <div class="img">
-                <img src="@/assets/img/member/member2.jpg" alt="Peter">
+                <img src="../../public/member/member2.jpg" alt="Peter">
             </div>
             <div class="content">
                 <div class="title">Leo Ronaldo</div>
@@ -44,7 +44,7 @@
 
         <div class="card card-3">
             <div class="img">
-                <img src="@/assets/img/member/member2.jpg" alt="Peter">
+                <img src="../../public/member/member2.jpg" alt="Peter">
             </div>
             <div class="content">
                 <div class="title">Leo Ronaldo</div>
@@ -58,7 +58,7 @@
         
         <div class="card card-4">
             <div class="img">
-                <img src="@/assets/img/member/member2.jpg" alt="Peter">
+                <img src="../../public/member/member2.jpg" alt="Peter">
             </div>
             <div class="content">
                 <div class="title">Leo Ronaldo</div>
@@ -72,7 +72,7 @@
 
         <div class="card card-1" >
             <div class="img">
-                <img src="@/assets/img/member/member2.jpg" alt="Peter">
+                <img src="../../public/member/member2.jpg" alt="Peter">
             </div>
             <div class="content">
                 <div class="title">Leo Ronaldo</div>
@@ -86,7 +86,7 @@
 
         <div class="card card-1" >
             <div class="img">
-                <img src="@/assets/img/member/member2.jpg" alt="Peter">
+                <img src="../../public/member/member2.jpg" alt="Peter">
             </div>
             <div class="content">
                 <div class="title">Leo Ronaldo</div>
@@ -100,7 +100,7 @@
 
         <div class="card card-1" >
             <div class="img">
-                <img src="@/assets/img/member/member2.jpg" alt="Peter">
+                <img src="../../public/member/member2.jpg" alt="Peter">
             </div>
             <div class="content">
                 <div class="title">Leo Ronaldo</div>
