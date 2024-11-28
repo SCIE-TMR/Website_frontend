@@ -17,6 +17,7 @@ export default defineConfig({
     }),
   ],
   assetsInclude: ['**/*.webp'],
+  base: "/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),

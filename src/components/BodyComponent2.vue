@@ -1,7 +1,7 @@
 <template>
-  <div class="container">
-    <img src="../../public/upper.webp" alt="" class="upper-img">
-    <img src="../../public/lower.webp" alt="" class="lower-img">
+  <div class="container font-bold">
+    <img src="/upper.webp" alt="" class="upper-img">
+    <img src="/lower.png" alt="" class="lower-img">
   </div>
 </template>
 

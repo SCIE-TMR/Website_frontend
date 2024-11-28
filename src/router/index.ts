@@ -8,6 +8,11 @@ import ErrorPage from '@/views/ErrorPage.vue';
 import Calendar from '@/views/Calendar.vue'
 const routes = [
   {
+    path: '/',
+    name: '',
+    component: HomePage,
+  },
+  {
     path: '/Home',
     name: 'Home',
     component: HomePage,
@@ -22,16 +27,16 @@ const routes = [
     name: 'Aboutus',
     component: AboutUsPage,  // 指向新的 About us 页面
   },
-  {
-    path: '/forum',
-    name: 'Forum',
-    component: ForumPage,  // 指向新的 Forum 页面
-  },
-  {
-    path: '/resources',
-    name: 'Resources',
-    component: ResourcesPage,  // 指向新的 Resources 页面
-  },
+  // {
+  //   path: '/forum',
+  //   name: 'Forum',
+  //   component: ForumPage,  // 指向新的 Forum 页面
+  // },
+  // {
+  //   path: '/resources',
+  //   name: 'Resources',
+  //   component: ResourcesPage,  // 指向新的 Resources 页面
+  // },
   {
     path: '/login',
     name: 'Login',

@@ -1,13 +1,17 @@
 <template>
   <div class="body-page">
     <div class="text-container">
-      <div class="line scie">
+      <div class="line scie font-bold">
         SCIE
       </div>
-      <div class="line tomorrow">
+      <div class="line tomorrow font-bold">
         TOMORROW
       </div>
+      <div class="line font-italic text-3xl">
+        (static preview)
+      </div>
     </div>
+
   </div>
 </template>
 
@@ -32,8 +36,8 @@ export default {
   flex-direction: column; /* 垂直排列 SCIE 和 TOMORROW */
   align-items: flex-start; /* 保证左对齐 */
   padding-left: 127px; /* 距离页面左侧一点间距 */
-  padding-bottom: 80px;
-  letter-spacing: 0.6rem;
+  padding-bottom: 40px;
+  letter-spacing: 0.3rem;
 }
 
 .line {
@@ -48,6 +52,6 @@ export default {
 
 .tomorrow {
   font-size: 6.5rem; /* TOMORROW 的字体更大 */
-  margin-top: 10px; /* 控制 SCIE 和 TOMORROW 之间的距离 */
+  margin-top: 5px; /* 控制 SCIE 和 TOMORROW 之间的距离 */
 }
 </style>
